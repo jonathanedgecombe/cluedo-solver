@@ -1,0 +1,37 @@
+package com.jonathanedgecombe.cluedo;
+
+public enum Card {
+	PERSON_MISS_SCARLETT,
+	PERSON_COLONEL_MUSTARD,
+	PERSON_MRS_WHITE,
+	PERSON_REVEREND_GREEN,
+	PERSON_MRS_PEACOCK,
+	PERSON_PROFESSOR_PLUM,
+
+	WEAPON_CANDLESTICK,
+	WEAPON_DAGGER,
+	WEAPON_LEAD_PIPING,
+	WEAPON_REVOLVER,
+	WEAPON_ROPE,
+	WEAPON_SPANNER,
+
+	ROOM_KITCHEN,
+	ROOM_BALLROOM,
+	ROOM_CONSERVATORY,
+	ROOM_DINING_ROOM,
+	ROOM_BILLIARD_ROOM,
+	ROOM_LIBRARY,
+	ROOM_LOUNGE,
+	ROOM_HALL,
+	ROOM_STUDY;
+
+	private Player owner = null;
+
+	public Player getOwner() {
+		return owner;
+	}
+
+	public void setOwner(Player owner) {
+		this.owner = owner;
+	}
+}
