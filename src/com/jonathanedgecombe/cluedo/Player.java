@@ -64,12 +64,12 @@ public final class Player {
 		if (noDuplicates.size() == 1) {
 			finalList = noDuplicates.get(0);
 		} else {
-			List<Card> union = noDuplicates.get(0);
+			List<Card> intersection = noDuplicates.get(0);
 			for (List<Card> combination : noDuplicates) {
-				union = ListUtil.union(union, combination);
+				intersection = ListUtil.intersection(intersection, combination);
 			}
 	
-			finalList = union;
+			finalList = intersection;
 		}
 
 		for (Card card : finalList) {

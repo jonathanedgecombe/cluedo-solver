@@ -10,7 +10,7 @@ public final class ListUtil {
 		return true;
 	}
 
-	public static <T> List<T> union(List<T> a, List<T> b) {
+	public static <T> List<T> intersection(List<T> a, List<T> b) {
 		List<T> union = new ArrayList<>();
 
 		for (T o : a) {
